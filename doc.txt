@@ -1,0 +1,76 @@
+Xây dựng website quảng bá cho khu du lịch Soleil (cần cung cấp thông tin địa điểm tham quan, các dịch vụ và khu vui chơi giải trí và đặt vé tham quan)
+1. Trang chủ
+Banner quảng cáo, khuyến mãi hấp dẫn, Về chúng tôi.
+Giới thiệu ngắn gọn về Soleil (vị trí, điểm nổi bật, lời mời gọi...).
+2. Trang khám phá
+Xem danh sách khu nghỉ dưỡng, khu vui chơi, dịch vụ
+Hiển thị dạng danh sách hoặc lưới, có ảnh, tiêu đề, địa điểm, mô tả ngắn, số sao, lượt đánh giá.
+3. Tìm kiếm
+Theo từ khóa (theo tên khu nghỉ dưỡng/khu vui chơi/dịch vụ).
+4. Trang chi tiết khu nghỉ dưỡng/khu vui chơi/dịch vụ
+Hiển thị: Tên địa điểm/khu vui chơi/dịch vụ
+Hình ảnh minh họa
+Mô tả chi tiết
+5. Đặt vé
+Form đặt vé online, gồm các trường: họ và tên, email, số điện thoại, số người dự kiến, thời gian tham quan, ghi chú.
+Sau khi đặt xong trở về trang chủ và thông báo thành công.
+
+Cơ sở dữ liệu chỉ bao gồm các bảng
+resort: chứa thông tin các khu nghỉ dưỡng: id, name, image, small_description(lưu thông tin số lượng phòng dạng varchar), detail_description, location, star, review_number.
+amusement: chứa thông tin các khu vui chơi: id, name, image, small_description(lưu thông tin ưu đãi dạng varchar), detail_description, location, star, review_number.
+service: chứa thông tin các dịch vụ: id, name, image, small_description(lưu thông tin đặc điểm), detail_description, location, star, review_number
+booking: chứa thông tin đơn đặt vé
+
+
+Nội dung cho các danh mục trong phần Khám phá
+
+I. Khu nghỉ dưỡng
+Tên: Tomodachi Làng Mít
+Mô tả chi tiết:
+Tomodachi Retreat Làng Mít tựa như một ốc đảo kỳ diệu. Nằm giữa không gian xanh mát yên bình của khu nghỉ dưỡng Soleil, nơi này lấy cảm hứng từ kiến trúc truyền thống của Việt Nam với những ngôi nhà mái lá quen thuộc, kết hợp với nét đặc trưng của kiến trúc Nhật Bản. 
+Khu nghỉ dưỡng được trang trí bằng rất nhiều cây xanh (như chuối, mít, vải, nhãn...) và bao quanh bởi một hồ nước rộng lớn. Đây chính là điểm đến lý tưởng để "refresh" năng lượng và tìm lại sự cân bằng sau thời gian khó khăn, hứa hẹn mang đến những kỷ niệm đáng nhớ cho du khách.
+Khuôn viên của Tomodachi Làng Mít được thiết kế như một ngôi nhà vườn, tạo cảm giác thân thuộc và gần gũi như trở về quê nhà. Du khách có thể thư giãn giữa những hàng cây xanh tươi mát, thăm quan chợ quê truyền thống và trải nghiệm cuộc sống đồng quê đơn sơ.
+
+Tên: Thang Mây Village & Resort
+Mô tả chi tiết:
+Với môi trường xanh mát và tầm nhìn trực diện ra hồ nước trong xanh, cùng với tầm nhìn hùng vĩ, Resort tạo ra một phong cảnh thiên nhiên tuyệt đẹp và đầy thơ mộng. Du khách có thể thả mình trong không gian yên bình và tận hưởng cảm giác thư thái giữa thiên nhiên, mỗi khoảnh khắc tại Bản Xôi Resort đều mang đến sự lãng mạn và cảm xúc trọn vẹn.
+
+Tên: Lamer Rersot
+Mô tả chi tiết:
+Tọa lạc tại vị trí đắc địa, chỉ cách chợ đêm Dinh Cậu 3km, cách sân bay 7km, là nơi thuận lợi để di chuyển đến các địa điểm tham quan du lịch ở Bắc và Nam Đảo.
+Tất cả các phòng đều có máy lạnh, truyền hình cáp, két an toàn và phòng tắm riêng với máy sấy tóc cùng đồ vệ sinh cá nhân miễn phí. Ban công riêng có tầm nhìn tuyệt đẹp ra quang cảnh vườn hoa và hồ sen.
+La Mer Resort - Phú Quốc sẽ là điểm đến ấn tượng và thú vị cho kỳ nghỉ của bạn. Đặt phòng ngay để có được mức giá tốt nhất chỉ trên trang web chính thức của chúng tôi!
+
+II. Khu vui chơi
+Tên: Siêu Thị Games
+Mô tả chi tiết:
+Là nơi hội tụ những trò chơi điện tử hấp dẫn, mới lạ như: đua ngựa, đập búa, đua mô tô, bắn súng, nhảy auditon…Siêu thị game trong khu công viên giải trí Soleil’s Land sẽ mang lại cho bạn những phút giây thư giãn, thoải mái bên gia đình, bạn bè. Cầm trong tay tấm thẻ vào Công viên bạn có thể tự do lựa chọn những trò chơi của khu Siêu thị Game theo ý thích của mình để chơi với số lần không hạn chế.
+
+Tên: Công viên nước
+Mô tả chi tiết:
+Công viên nước ở VinWonders Nha Trang bao gồm các khu trò chơi cảm giác mạnh: 
+Đường trượt cảm tử quân (Kamikaze): Đây là “địa bàn” dành cho những người gan dạ, liều lĩnh. Với tốc độ lên tới 60km/h, cảm tử quân mang tới cho người chơi cảm giác như đang bay khỏi đường trượt có độ cao 21m.
+Hố đen vũ trụ (Space Hole): Trò chơi này sẽ mang tới cho du khách những cảm nhận chân thật nhất về sự xoáy, cuốn, hút với tốc độ ánh sáng trong đường trượt có độ dài 19m.
+Đường trượt 6 làn (Multi Slide): Với độ cao lên tới 15m và tổng chiều dài đường trượt 100m, thả mình từ trên đỉnh xuống là cảm giác cực “phê” mà bất kỳ dân mê cảm giác mạnh nào cũng đều  không thể bỏ qua.
+Đường trượt phao bay đôi (Flying Boat): Với trò chơi này, 2 người đều có thể trải nghiệm cùng lúc. Từ độ cao 15m, hai người chơi sẽ được thả xuống một chiếc phao đôi và bắt đầu trượt với vận tốc tối đa. Lúc này, hơn cả trượt, người chơi sẽ có cảm giác như đang bay bổng và lướt đi trên những con tàu cao tốc hiện đại nhất. 
+Đường trượt thân người (Body Slide): Trò chơi này gồm 3 máng trượt thân người chỉ cao 13m, được thiết kế với đa dạng màu sắc, cấu tạo, đem đến những thử thách từ dễ đến khó, thích hợp cho cả gia đình cùng trải nghiệm.. 
+Đường trượt Sóng thần (Tsunami): Mặc dù chỉ có độ cao 13m nhưng sức cuốn cực mạnh của sóng trong trò chơi này sẽ làm những người can đảm nhất cũng phải “thót tim”.
+
+Tên: Công viên giải trí
+Mô tả chi tiết:
+Nơi du khách sẽ khai mở cánh cửa thời gian, vượt qua ranh giới về không gian để khám phá và tận hưởng những trải nghiệm vượt xa khỏi trí tưởng tưởng. Công viên Soleil được lựa chọn là điểm đến hàng đầu, bởi vì:
+Câu chuyện hoặc chủ đề công viên, dịch vụ vui chơi: đa dạng, phong phú, không lặp lại, không giống nhau ở Công viên Soleil; Sun World mang dấu ấn thiên nhiên - công trình và văn hóa địa phương; Sun World luôn tiên phong bắt kịp hoặc dẫn đầu xu hướng đầu tư ý tưởng sáng tạo, thiết kế & công nghệ để mỗi chuyến đi là một khám phá bất ngờ & mở ra những trải nghiệm mới.
+
+III. Dịch vụ
+Tên: Gội đầu dưỡng sinh
+Mô tả chi tiết:
+Bằng cách kết hợp giữa gội đầu với các kỹ thuật bấm huyệt, massage, xoa bóp ở các bộ phận như cổ, đầu, cánh tay, vai gáy… từ đó tác động lên các huyệt đạo giúp cơ thể được thư giãn, giảm bớt căng thẳng, mệt mỏi.Gội đầu dưỡng sinh không chỉ đơn thuần là làm sạch tóc và da đầu mà nó còn được xem là phương pháp trị liệu tốt cho sức khỏe thể chất lẫn tinh thần. 
+
+Tên: Estheva Spa
+Mô tả chi tiết:
+Khám phá các dịch vụ đa dạng tại như xông chân bài độc và liệu pháp đả thông kinh lạc cổ, vai, gáy, thận, gan, tỳ, vị, tim để cải thiện sức khỏe và giảm đau mỏi. Hòa mình trong không gian ấm cúng với các liệu pháp massage toàn thân, chân và đá nóng giúp giải tỏa căng thẳng và mệt mỏi từ công việc và cuộc sống hàng ngày.
+Estheva Spa không chỉ chú trọng chăm sóc cơ thể mà còn chú trọng đến làm đẹp với các dịch vụ chăm sóc da mặt từ cơ bản và chuyên sâu, mặt nạ ngọc, tẩy tế bào chết toàn thân. Tận hưởng không gian sang trọng, thiết kế tinh tế, mang đậm phong cách Hàn Quốc. Tới đây bạn sẽ có cảm giác như bước chân vào cung điện Joseon thời xưa.
+
+Tên: Yoga
+Mô tả chi tiết:
+Hòa mình vào thiên nhiên tươi đẹp, dịch vụ yoga ngoài trời tại khu du lịch mang đến cho du khách những phút giây thư giãn tuyệt đối. Với không gian thoáng đãng, tiếng chim hót và gió nhẹ len qua từng tán cây, buổi tập giúp cân bằng năng lượng, cải thiện sức khỏe thể chất lẫn tinh thần. Phù hợp cho mọi lứa tuổi, lớp học được hướng dẫn bởi các huấn luyện viên chuyên nghiệp, mang đến trải nghiệm phục hồi và tái tạo toàn diện giữa thiên nhiên trong lành.
